@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: 0;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: azure;
+}
+
+header{
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: cyan;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.logo hover{
+    transform: scale(1.1);
+}
+
+nav a:hover,
+nav a.active{
+    color: cyan;
+    border-bottom: 3px solid red;
+}
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: top;
+        top: 0;
+        width: 40%;
+        right: 0;
+        border-left: 3px solid red;
+        border-bottom: 3px solid red;
+        border-bottom-left-radius: 2rem;
+        background-color: black;
+        border-top: 0.1rem solid rgba(0,0,0,0.1)
+        
+    }
+
+
+nav.active{
+    display: block;
+}
+
+nav a{ 
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+nav a:hover,
+nav a.active{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem red;
+}
+
+section{
+    min-height: 89vh;
+    padding: 2rem 9% 2rem;
+}
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+
+}
+
+.home .home-content h1{
+    font-size:  6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: cyan;
+
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    text-shadow: 0 0 70px #25D366;
+}
+
+.home img{
+    border: relative;
+    width: 25vw;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 29px cyan;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.home-img img:hover{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-left: 0;
+}
+
+.social-media-title{
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.3rem solid;
+    font-size: 2rem;
+    border-radius: 50%;
+    transition: 0.3s ease-in;
+    text-decoration: none;
+}
+
+
+.social-icons a:nth-child(1){
+    color: #f42525;
+    border-color: #f42525;
+}
+
+.social-icons a:nth-child(1):hover{
+    background-color: #f42525;
+    box-shadow: 0 0 25px #f42525;
+    color: black;
+}
+
+
+.social-icons a:nth-child(2){
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+.social-icons a:nth-child(2):hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #ffffff;
+    color: black;
+}
+
+.social-icons a:nth-child(3){
+    color: #ff002f;
+    border-color: #ff002f;
+}
+
+.social-icons a:nth-child(3):hover{
+    background-color: #E4405F;
+    box-shadow: 0 0 25px #E4405F;
+    color: black;
+}
+
+
+.social-icons a:nth-child(4){
+    color: #d32525;
+    border-color: red;
+}
+
+.social-icons a:nth-child(4):hover{
+    background-color: #25D366;
+    box-shadow: 0 0 25px #25D366;
+    color: black;
+    transform: scale(1.3)translateY(5px);
+}
+
+.btn{
+display: inline-block;
+padding: 1rem 2.8rem;
+background-color: black;
+border-radius: 4rem;
+font-size: 1.6rem;
+color: red;
+letter-spacing: 0.3rem;
+font-weight: 600;
+border: 2px solid red;
+transition: 0.3s ease-out;
+cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: red;
+    color: black;
+    box-shadow:0 0 25px red;
+}
+
+.typing-text{
+font-size: 34px;
+font-weight: 600;
+min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+/* .typing-text span::before{ */
+    /* content: "Siswa t";
+    color: red; */
+    /* animation: words 20s infinite; */
+/* } */
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px) solid black;
+    height: 100%;
+    border-left: 3px solid;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+to{
+    border-left: 3px solid;
+}
+}
+
+/* @keyframes words{ */
+    /* 0%, 20%{
+        content:"Letris 2 Student";
+    }
+    21%,41%{
+        content:"Web Devlopment";
+    }
+    41%,60%{
+        content:"Student";
+    }
+    81%,100%{
+        content:"Student";
+    }   
+} */
+
+@media (max-width:995px){
+.home{
+    flex-wrap: column;
+    margin: 5rem 4rem;
+}
+
+.home.home-content h3{
+font-size: 2.5rem;
+}
+
+.home-content h1{
+    font-size: 5rem;
+}
+.home-img img{
+    width: 700;
+    margin-top: 4rem;
+}
+
+}
+
+/* Contact Section */
+.contact{
+    min-height: 100vh;
+    padding: 8rem 9% 4rem;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact h2{
+    font-size: 4.5rem;
+    text-align: center;
+    color: gold;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-intro{
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(255, 204, 0);
+    margin-bottom: 4rem;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info-box{
+    background-color: rgba(255, 0, 0, 0.05);
+    border: 2px solid cyan;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: 0.3s ease;
+    text-align: center;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box:hover{
+    background-color: rgba(255, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.3);
+}
+
+.info-box i{
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.info-box h3{
+    font-size: 1.8rem;
+    color: a;
+    margin-bottom: 0.5rem;
+}
+
+.info-box p{
+    font-size: 1.4rem;
+    color: orange;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 1.4rem;
+    color: gold;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.btn-submit{
+    padding: 1.2rem 2.8rem;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit:hover{
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 25px red;
+    transform: scale(1.05);
+}
+
+@media (max-width: 995px){
+    .contact{
+        padding: 6rem 5%;
+        min-height: auto;
+    }
+
+    .contact h2{
+        font-size: 3rem;
+    }
+
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .info-box{
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea{
+        font-size: 1.2rem;
+    }
+}
+
+p{
+    text-align: center; 
+    margin-top: 1.8rem;
+}
